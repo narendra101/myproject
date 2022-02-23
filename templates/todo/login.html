@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'todo/base.css' %}">
+    <title>signup</title>
+</head>
+<body>
+    <div class="container">        
+        <form class="registration-form" action="/todo/login/" method="post">
+            {% csrf_token %}
+            <h1 style="color: #00fff0; font-style: italic; text-align: center; margin-bottom: 6px;">Login</h1>  
+            {% if message %}
+                <p class="error">{{ message }}</p>
+            {% endif %}          
+            <input type="text" name="username" placeholder="username" required />            
+            <input type="password" name="password" placeholder="password" required />            
+            <input type="submit" class="signup-button" value="Login">
+            <a class="back" href="{% url 'todo:todo-home' %}">Back</a>
+        </form>
+    </div>    
+</body>
+</html>

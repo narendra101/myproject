@@ -1,0 +1,88 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;    
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    align-items: center;
+    background-color:rgb(70, 158, 132);
+}
+
+a {
+    background-color: rgb(92, 32, 104);
+    margin: 20px 10px;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 5px 10px;
+    font-style: italic;
+    border-radius: 8px;
+    box-shadow: 0px 5px 5px 0px #000000;
+    text-align: center;
+}
+
+.card {
+    height: 200px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color:rgb(72, 146, 243);
+    border-radius: 8px;
+    box-shadow: 0px 8px 10px 0px #000000;
+    padding: 10px;
+}
+
+input {
+    padding: 4px;
+    margin: 5px 0px;
+    opacity: 0.8;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    color: #000000;
+
+}
+.registration-form {
+    height: 350px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color:rgb(72, 146, 243);
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px 0px #000000;
+    padding: 10px;
+    
+}
+.signup-button {
+    background-color: goldenrod;
+    padding: 4px 8px;
+    opacity: 1;
+    align-self: center;
+    margin-top: 20px;    
+    cursor: pointer;
+}
+.signup-button:active {
+    padding: 2px 6px;
+}
+.error {
+    color: orange;
+    font-size: 16px;
+    text-align: center;
+}
+.back {
+    background-color: green;    
+    padding: 4px 8px;
+    opacity: 1;
+    align-self: center;
+    margin-top: 10px;    
+    cursor: pointer;
+    box-shadow: none;
+}
